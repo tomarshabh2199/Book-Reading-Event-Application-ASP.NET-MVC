@@ -2,57 +2,8 @@
 
  create an application to manage book-reading events. It will allow managing events across world wide. A book reading event is where book lovers come together for a community reading of their favourite book. One or more readers read the book loudly and optionally people even play different roles from the book!
  
- 
- 				
-Page			                                                 Is Mandatory?	Notes
-
-1	Create a book reading event (only for logged in users)			
-	Title	string	Yes	
-	Date	datetime	Yes	Can be in past. Used to add previous events for record-keeping purpose
-	location	  string	    Yes	
-	start time	dropdown (from 00:00 to 2300)		
-	Type	Public/Private		default public
-	Duration in hours	int	  No	   Maximum 4
-	Description	   string	   No	       Max   50 characters
-	Other Details	 string	  No	     Max   500 characters
-	Invite by email	string	No	comma-separated email of users to invite
-				
-2	Edit a book reading event (only for logged in users)			
-	Same fields as "Create"			
-	Events with start date in past cannot be edited			
-				
-3	View a book reading event			
-	Title	As entered	Yes	
-	Date	As entered	Yes	
-	location	As entered	Yes	
-	start time	As entered		
-	Duration in hours	As entered	No	Show only if entered during creation
-	Description	As entered	No	Show only if entered during creation
-	Other Details	As entered	No	Show only if entered during creation
-	Total invited to event	As entered	Yes	Count number of emails and show as int
-	Comments	string	No	Allow the user to post a comment on the event
-	Past comments	List of older comments	-	If there are past comments, show them below comments box. Sort by oldest comment first.
-				
-4	Create User/Register			
-	Email	string	Yes	Check for duplicacy and disallow registration for duplicate users
-	Password	string	Yes	Masked field. Must be at least 5 characters and contain at least one special character.
-	Full Name	string	Yes	
-				
-5	Homepage			
-	Upcoming events	Show title as hyperlink		Hyperlink takes user to event details page
-	Past Events	Show title as hyperlink		Hyperlink takes user to event details page
-				
-6	My events (only for logged in users)			
-	All events by current user	Show title as hyperlink		"- Hyperlink takes user to event details page.
-- Sorted by latest event-start-date first.
-- Show an edit link next to each event to allow editing"
-				
-7	Events invited to (only for logged in users)			
-	All events where user was invited	Show title as hyperlink		Hyperlink takes user to event details page
-				
+ 			
 ![image](https://user-images.githubusercontent.com/44699205/121894610-f493f080-cd3c-11eb-8a44-5b77a002901e.png)
-
-
 
 
 ###
