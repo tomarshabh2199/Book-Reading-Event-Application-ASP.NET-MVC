@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        {
+
+        }
+    </style>
+</head>
+<body>
+
+    <u><h2> Admin Login Form</h2></u>
+    <!--action="/action_page.php" method="post"-->
+    <form >
+        <div class="jumbotron">
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="admin.com" name="uname" required><br />
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="strong encypted password" name="psw" required><br />
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <div class="container">
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-success">Login</button>
+                <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+            </div>
+    </form>
+
+</body>
+</html>
+
+

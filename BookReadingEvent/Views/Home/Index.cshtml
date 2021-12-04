@@ -1,0 +1,31 @@
+﻿@using System.Web.Optimization;
+
+
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+<div class="jumbotron">
+    <u><h1>Book Reading Event</h1></u>
+    <p class="lead">This is the right place where you can learn any book that might be related for your academic, festive, competitive and politics 
+    you can chose and start reading on this platform.</p>
+    <p><a href="@Url.Action("bookReadingEventPage","Home")" class="btn btn-primary btn-lg">Book reading event &raquo;</a></p>
+</div>
+</div>
+<div class="row"> 
+    <div class="col-md-4">
+        <h2><u> Past Events </u></h2>
+            <p>
+                By clicking on this link you go to the all event that have already occured in the past days!
+            </p>
+            <p><a href="@Url.Action("pastEvents","Home")" class="btn btn-primary btn-lg">Go to Past events &raquo;</a></p>
+</div>
+    <div class="col-md-4">
+        <h2><u>Future Events</u></h2>
+            <p>By clicking on it you can go to the the pages that have happening in the future time span!</p>
+            <p><a class="btn btn-primary btn-lg" href="@Url.Action("futureEvents","Home") ">Go to Future Events &raquo;</a></p>
+</div>
+   
+</div>

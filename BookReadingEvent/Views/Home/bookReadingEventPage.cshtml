@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "BookReadingEventPage";
+}
+<style>
+    body {
+    }
+</style>
+<b><u><h1>BookReadingEventPage</h1></u><br /></b>
+
+<div class="jumbotron">
+    <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Titleof the Book</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Title of the Book">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="description">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Other Details</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="other Details">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Invitation via Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="InviteEmail">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <p>
+                Duration in hours  
+                    <select name="hour" id="hour">
+                        <option value="1 hour">1 hour</option>
+                        <option value="2 hour">2 hour</option>
+                        <option value="3 hour">3 hour</option>
+                        <option value="4 hour">4 hour</option>
+                    </select></p>
+    </div>
+
+     <div class="form-group row">  <p> Start Time   <input type="time" id="Time" name="Time"></p>
+     </div>
+
+     <div class="form-group row">
+         <p>Date of Event   <input type="date" id="date" name="Date"></p>
+         </div>
+</form>
+    </div>
+<button class="btn btn-primary" type="submit" value="submit">Submit</button>
+<button class="btn btn-primary" type="Reset" value="submit">Clear</button>
+<br />
+<br />
+<p>Note:: Event organizer</p>
+
+

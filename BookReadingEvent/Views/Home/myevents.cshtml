@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "MyEvents";
+}
+<div class="jumbotron">
+    <h2>  <u>@ViewBag.Title</u></h2>
+    <h3>@ViewBag.Message</h3>
+
+
+    <h4> First You need to login then you can only see the MyEvents.</h4>
+    <br />
+
+    <button class="btn btn-outline-success" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required><br />
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required><br />
+
+                <button type="submit" class="btn btn-success">Login</button><br />
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <br />
+    <!--Edit The Event-->
+    <p>List of all the events in which you are enrolled!!</p>
+    <ol>
+        <li><h2><a href="@Url.Action("EventEdit","Home")" class="btn btn-primary btn-lg">The Ghost &raquo;</a></h2></li>
+        <li><h2><a href="@Url.Action("EventEdit","Home")" class="btn btn-primary btn-lg">Men in the Middle Attack&raquo;</a></h2></li>
+        <li><h2><a href="@Url.Action("EventEdit","Home")" class="btn btn-primary btn-lg">Cryptocurrency &raquo;</a></h2></li>
+        <li><h2><a href="@Url.Action("EventEdit","Home")" class="btn btn-primary btn-lg">Thermodynamics &raquo;</a></h2></li>
+        <li><h2><a href="@Url.Action("EventEdit","Home")" class="btn btn-primary btn-lg">RD Sharma  &raquo;</a></h2></li>
+    </ol>
+    <!--Filter the events sort by date, time-->
+    <p>Use this area to provide additional information.</p>
+</div>
+<br />
+    
+    <address>
+        <strong> Customer Help & Support:</strong> <a href="http://www.helpdesk@nagarro.com">helpdesk@nagarro.com</a>
+    </address>
